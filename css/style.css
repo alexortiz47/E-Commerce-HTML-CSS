@@ -1,15 +1,18 @@
 @import url(reset.css);
 @import url('https://fonts.googleapis.com/css?family=Cuprum:400,700');
+*{
+	box-sizing: border-box; /* Hace que no sume px con los bordes y el padding a nuestro div */
+}
 body{
 	font-family: 'Cuprum', sans-serif;
 	font-size: 1em;
 }
 p{
-	color:#646464;
+	color: #646464;
 }
 h1,h2,h3,h4,h5,h6{
 	color: #717171;
-	font-weight: 700; /*Ponemos 700 porque es la que tenemos cargada para la fuente bold*/
+	font-weight: 700; /* Ponemos 700 porque es la que tenemos cargada para la fuente bold */
 }
 a{
 	text-decoration: none;
@@ -36,11 +39,59 @@ h6{
 	width: 980px;
 	margin: 0 auto;
 }
+.row:after{ /* Con esto limpiamos los floats. Funciona como un escudo. Le decimos que los elementos que estan antes de after pertenecen al padre .row */
+	content: "";
+	height: 0;
+	display: block;
+	clear: both;
+}
 .hero{
 	background-image: url('../images/chica.jpg');
 	height: 425px;
-	background-size: cover; /*Para que el fondo se adapte al tamaño de su contenedor*/
+	background-size: cover; /* Para que el fondo se adapte al tamaño de su contenedor */
 }
+
+
+/* HEADER */
+
+header{
+	height: 85px;
+	padding: 30px 0 0 0;
+}
+header .logo img{
+	border-right: 1px solid #ddd;
+}
+header nav ul li{
+	display: inline-block;
+}
+header nav ul li a{
+	display: block; /* Tenemos que ponerle block porque sino no le va a plaicar propiedades arriba y abajo, ya que los elementos en linea no tienen altura */
+	padding: 10px 20px 0px 20px;
+	text-align: center;
+	color: #646464;
+	height: 55px;
+}
+header nav ul li a:hover{
+	color: #404040;
+	border-bottom: 3px solid #fe0000;
+}
+header .carrito a{
+	font-size: 150%;
+	color: #646464;
+	border: 2px solid #646464;
+	padding: 5px 15px;
+	border-radius: 25px;
+}
+header .carrito a:hover{
+	color: #fe0000;
+	border-color: #fe0000;
+}
+header .logo, header nav{
+	float: left;
+}
+header .carrito{
+	float: right;
+}	
 
 
 

@@ -36,3 +36,17 @@ h6{
 	width: 980px;
 	margin: 0 auto;
 }
+.hero{
+	background-image: url('../images/chica.jpg');
+	height: 425px;
+	background-size: cover; /*Para que el fondo se adapte al tamaño de su contenedor*/
+}
+
+
+
+
+
+
+
+
+

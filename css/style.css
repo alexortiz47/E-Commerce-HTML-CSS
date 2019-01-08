@@ -53,7 +53,6 @@ h6{
 
 
 /* HEADER */
-
 header{
 	height: 85px;
 	padding: 30px 0 0 0;
@@ -92,7 +91,6 @@ header .logo, header nav{
 header .carrito{
 	float: right;
 }	
-
 /* FIN HEADER */
 
 
@@ -126,7 +124,7 @@ footer .footer-sup .columna-small .stores{
 footer .columna .social li{
 	display: inline-block;
 	font-size: 20px;
-	margin-right: 5px;
+	margin-right: 10px;
 }
 footer a{
 	color: #646464;
@@ -144,6 +142,65 @@ footer .footer-sup nav ul li{
 	line-height: 25px;
 }
 /* FIN FOOTER */
+
+
+/* MAIN */
+main h1{
+	display: none;
+}
+main .products{
+	padding: 40px 0px;
+}
+main .products hr{
+	border-color: #eee;
+	width: 70%;
+}
+main .products h2{
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #fff;
+	width: 20%;
+	margin: 0 auto;
+	margin-top: -18px;
+	margin-bottom: 20px;
+}
+main .products article{
+	border: 4px solid #ebebeb;
+	width: 31%;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px;
+	line-height: 20px;
+	position: relative;
+}
+main .products article img{
+	width: 100%;
+	height: auto;
+}
+main .products article .descuento{
+	background-color: #f44d55;
+	color: white;
+	font-weight: 700;
+	padding: 10px;
+	width: 25%;
+	border-left: 4px solid #fe0000;
+	position: absolute;
+	top: 25px;
+	left: -4px;
+}
+.flex {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+main .brands{
+	margin-bottom: 40px;
+}
+main .brands article .imagenbrand{
+	border: 4px solid #ebebeb;
+}
+
+/* FIN MAIN */
 
 
 

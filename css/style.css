@@ -193,6 +193,12 @@ main .products article .descuento{
 	flex-flow: row wrap;
 	justify-content: space-between;
 }
+main .brands{
+	margin-bottom: 40px;
+}
+main .brands article .imagenbrand{
+	border: 4px solid #ebebeb;
+}
 
 /* FIN MAIN */
 

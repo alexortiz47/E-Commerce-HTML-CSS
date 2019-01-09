@@ -196,7 +196,7 @@ main .products article .descuento{
 main .brands{
 	margin-bottom: 40px;
 }
-main .brands article .imagenbrand{
+main .brands .imagenbrand{
 	border: 4px solid #ebebeb;
 }
 
